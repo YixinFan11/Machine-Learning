@@ -11,19 +11,21 @@ The goal of supervised learning is to minimize the loss function
   ![Image](https://github.com/YixinFan11/Machine-Learning/blob/master/MLP/images/loss_fun_1.png?raw=true)
 </details>
 
+### Section 2:  Type of Neural Network
 <details>
   <summary>Neural Network Structure</summary>
 
  ![Image](https://github.com/YixinFan11/Machine-Learning/blob/master/MLP/images/fun_1.png?raw=true)
  
-  Φ is activation function and 
+  Φ is activation function and output a is activation. Common activation function:
+  
+ ![Image](https://github.com/YixinFan11/Machine-Learning/blob/master/MLP/images/act_fun.png?raw=true)
+ ![Image](https://github.com/YixinFan11/Machine-Learning/blob/master/MLP/images/act_fun_tab.png?raw=true)
 
 
 </details>
 
 
-
-### Section 2:  Type of Neural Network
 
 ### Section 3:  Back Propagation
 
