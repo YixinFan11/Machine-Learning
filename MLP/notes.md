@@ -25,8 +25,6 @@ The goal of supervised learning is to minimize the loss function
 
 </details>
 
-
-
 ### Section 3:  Back Propagation
 
 
