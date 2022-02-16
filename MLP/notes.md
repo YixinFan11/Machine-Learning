@@ -27,8 +27,31 @@ The goal of supervised learning is to minimize the loss function
 
 ### Section 3:  Back Propagation
 
+Back Propagation example on XOR and AND See Colab
+
+Keras layers see: [Keras Layers API](https://keras.io/api/layers/).
+Common layers: 
+ - Core Layer: Dense layer(fully connected), Activation layer, Embedding layer, Masking layer, Lambda layer
+ - Convolutional Layer
+ - Pooling Layer: MaxPooling layer, AveragePooling layer, etc.
+ - Reshaping Layer: Reshaping layer, Unsampling Layer, etc.
+
 
 ### Section 4:  Optimisation
+
+<details>
+  <summary>Optimisation Technique</summary>
+  
+The goal of supervised learning is to minimize the loss function
+ - Stochastic Gradient Descent 
+ - Stochastic Gradient Descent with Momentum
+ - RMSprop
+ - ADAM
+  
+
+
+
+</details>
 
 ### Section 5:  Initialisation
 
