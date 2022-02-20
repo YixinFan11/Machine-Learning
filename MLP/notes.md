@@ -62,6 +62,19 @@ The goal of supervised learning is to minimize the loss function
 </details>
 
 ### Section 5:  Initialisation
+If the gradients become small, training will proceed at a much slower rate and may not converge. This is called the **vanishing gradients problem**.
+If the gradients become too large, the algorithm may diverge. This is called the  **exploding gradients problem**, and is mostly encountered in recurrent neural networks.
+
+Xavier initialisation(Glorot initialisation)
+
+Feature scaling, Normalisation(min-max, standardisation)
 
 ### Section 6:  Regularisation
+**Regularisation** can be defined as any strategy designed to reduce **generalisation error**, but **not** impact on the **training error**. In deep learning an effective regulariser successfully balances the bias-variance trade off, that is it decreases the model variance responsible for over-fitting, while not overly increasing the bias.
+
+ - Early Stopping
+ - L1/L2 regularisation
+ - Dropout
+ - Batch Normalisation
+ - Data Augmentation
 
