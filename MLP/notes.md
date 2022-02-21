@@ -71,10 +71,32 @@ Feature scaling, Normalisation(min-max, standardisation)
 
 ### Section 6:  Regularisation
 **Regularisation** can be defined as any strategy designed to reduce **generalisation error**, but **not** impact on the **training error**. In deep learning an effective regulariser successfully balances the bias-variance trade off, that is it decreases the model variance responsible for over-fitting, while not overly increasing the bias.
-
- - Early Stopping
- - L1/L2 regularisation
- - Dropout
- - Batch Normalisation
- - Data Augmentation
+<details>
+  <summary>Early Stopping</summary>
+  For large datasets, split into training, test and holdout sets(Holdout data is used to assess the final performance of the tuned model).
+  Early stopping terminates the training process after the test loss has not improved over the previously recorded best test loss for a specified number of epochs
+  </details>
+  
+ <details>
+  <summary>L1/L2 regularisation</summary>
+L1 and L2 regularisation are types of parameter-norm penalties, which can be implemented by adding a term to the cost function: J'(w) = J(w) + λΩ(w), where λ is hyperparameter determine the contribution of penalty term Ω(w)(kernel_regularizer in keras API)
+  - L2 is also known as ridge-regression
+  - L1 is also known as LASSO-regression
+  </details>
+  
+  <details>
+  <summary>Dropout</summary>
+During training, every neuron (including the input neurons but excluding the output neurons) has a probability p of having its input and output weights set to zero. This reduces the chance of introducing spurious correlations that do not significantly contribute to improving the loss.
+  </details>
+  
+  <details>
+  <summary>Batch Normalisation</summary>
+Batch normalisation is a method originally developed to reduce the vanishing/exploding gradients problem, but it has also been shown to have a regularising effect. It consists of adding an additional operation just before the activation function, that zero centers and normalises the inputs for each batch, then scales and shifts the results using two new learnable parameters. It can be added to individual layers in the network, each with separate learnable parameters, and is implemented in the TF2 keras API as a "BatchNormalization" layer.
+  </details>
+  
+  <details>
+  <summary>Data Augmentation</summary>
+The best way to reduce over-fitting is to use more data.One can generate new training examples from existing ones by augmenting them. When using image data, for example, one could slightly shift, rotate, resize, crop, adjust the contrast, add small random noise etc, and this would force the model to be more tolerant to these properties and learn better representations of the data.
+It is preferable to generate these new examples during training, rather than saving them to disk, and **TF2** offers several data augmentation methods
+  </details>
 
